@@ -1,6 +1,6 @@
 
 # react-native-weibo-login
-React Native App接入微博登陆，不需要分享，在github找到了[react-native-weibo](https://github.com/reactnativecn/react-native-weibo)，可惜该库已经一年没有更新，使用的不是最新的微博SDK（ android SDK版本：4.1，ios SDK版本3.2.1 ），不能很好的兼容最新的RN（ 0.55.4 ）版本，所以自己动手写了这个库，实现了微博登陆，没实现分享功能。
+React Native App接入微博登录，不需要分享，在github找到了[react-native-weibo](https://github.com/reactnativecn/react-native-weibo)，可惜该库已经一年没有更新，使用的不是最新的微博SDK（ android SDK版本：4.1，ios SDK版本3.2.1 ），不能很好的兼容最新的RN（ 0.55.4 ）版本，所以自己动手写了这个库，实现了微博登录，没实现分享功能。
 
 ## Getting started
 
@@ -110,7 +110,7 @@ let config = {
 WeiBo.login(config)
     .then(res=>{  
         console.log('login success:',res)
-        //登陆成功后打印出的数据如下：
+        //登录成功后打印出的数据如下：
         // { 
         //     refreshToken: '2.00Gc2PbDcecpWC127d0bc690FE7TzD',
         //     type: 'WBAuthorizeResponse',
