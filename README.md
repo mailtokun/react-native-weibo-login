@@ -1,27 +1,27 @@
 
-# react-native-weibo-login
+# react-native-weibo-login-kun
 React Native App接入微博登录，不需要分享，在github找到了[react-native-weibo](https://github.com/reactnativecn/react-native-weibo)，可惜该库已经一年没有更新，使用的不是最新的微博SDK（ android SDK版本：4.1，ios SDK版本3.2.1 ），不能很好的兼容最新的RN（ 0.55.4 ）版本，所以自己动手写了这个库，实现了微博登录，没实现分享功能。
 
 ## Getting started
 
-`$ npm install react-native-weibo-login --save`
+`$ npm install react-native-weibo-login-kun --save`
 
 or
 
-`yarn add react-native-weibo-login`
+`yarn add react-native-weibo-login-kun`
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-weibo-login`
+`$ react-native link react-native-weibo-login-kun`
 
 ### Manual installation
 
 
 #### iOS
 
-1. Add `node_modules/react-native-weibo-login/ios/WeiboSDK.bundle` in you project, or else it will be crash.  
-![add_weibosdk_bundle](https://github.com/zhanguangao/react-native-weibo-login/blob/master/Example/src/add_weibosdk_bundle.png?raw=true)
-2. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`, Go to `node_modules` ➜ `react-native-weibo-login` and add `RCTWeiBo.xcodeproj`.
+1. Add `node_modules/react-native-weibo-login-kun/ios/WeiboSDK.bundle` in you project, or else it will be crash.  
+![add_weibosdk_bundle](https://github.com/zhanguangao/react-native-weibo-login-kun/blob/master/Example/src/add_weibosdk_bundle.png?raw=true)
+2. In XCode, in the project navigator, right click `Libraries` ➜ `Add Files to [your project's name]`, Go to `node_modules` ➜ `react-native-weibo-login-kun` and add `RCTWeiBo.xcodeproj`.
 3. In XCode, in the project navigator, select your project.
     
     Add
@@ -68,12 +68,12 @@ sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
   - Add `new WeiBoPackage()` to the list returned by the `getPackages()` method.
 2. Append the following lines to `android/settings.gradle`:
   	```
-  	include ':react-native-weibo-login'
-  	project(':react-native-weibo-login').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-weibo-login/android')
+  	include ':react-native-weibo-login-kun'
+  	project(':react-native-weibo-login-kun').projectDir = new File(rootProject.projectDir, '../node_modules/react-native-weibo-login-kun/android')
   	```
 3. Insert the following lines inside the dependencies block in `android/app/build.gradle`:
   	```
-      compile project(':react-native-weibo-login')
+      compile project(':react-native-weibo-login-kun')
   	```
 4. Insert the following lines inside the allprojects block in `android/build.gradle`:
   	```
@@ -99,7 +99,7 @@ sourceApplication:(NSString *)sourceApplication annotation:(id)annotation
 
 ## Usage
 ```javascript
-import * as WeiBo from 'react-native-weibo-login';
+import * as WeiBo from 'react-native-weibo-login-kun';
 
 let config = {
     appKey:"2317411734",
